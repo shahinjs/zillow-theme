@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Zillow Help Center</title>
+    <link rel="shortcut icon" href="image/fav.svg" type="image/x-icon">
+    <!-- bootstrap icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/help_center.css">
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+        <!-- codes for header section -->
+<header>
+    <div class="container">
+        <div class="logo"><a href="index.html"><img src="image/logo.svg" alt="Logo" width="100%"></a></div>
+        <div class="links">
+            <a href="#">Submit a request</a>
+            <a href="user_login.html">Sign In</a>
+        </div>
+    </div> <!-- container -->
+</header> <!-- header section -->
+
+        <!-- codes for banner section -->
+<div id="banner">
+    <div class="container">
+        <div class="search_wrapper">
+            <i class="bi bi-search"></i>
+            <input type="text" placeholder="Search" id="searchBtn" onkeyup="searchForHelp()">
+        </div>
+    </div> <!-- container-->
+</div> <!-- banner section -->
+
+        <!-- codes for main section -->
+<main>
+    <div class="container">
+        <div class="row help_links">
+            <div class="col-xl-4 col-lg-6 wrapper">
+                <a href="#">Professional</a>
+            </div>
+            <div class="col-xl-4 col-lg-6 wrapper">
+                <a href="#">Info for Lenders</a>
+            </div>
+            <div class="col-xl-4 col-lg-6 wrapper">
+                <a href="#">Mortgages</a>
+            </div>
+            <div class="col-xl-4 col-lg-6 wrapper">
+                <a href="#">Co-Marketing (Premier Agent Lender)</a>
+            </div>
+            <div class="col-xl-4 col-lg-6 wrapper">
+                <a href="#">Landlords and Property Managers</a>
+            </div>
+            <div class="col-xl-4 col-lg-6 wrapper">
+                <a href="#">Renters</a>
+            </div>
+            <div class="col-xl-4 col-lg-6 wrapper">
+                <a href="#">Home Buyers</a>
+            </div>
+            <div class="col-xl-4 col-lg-6 wrapper">
+                <a href="#">Home Owners</a>
+            </div>
+            <div class="col-xl-4 col-lg-6 wrapper">
+                <a href="#">Home Sellers</a>
+            </div>
+            <div class="col-xl-4 col-lg-6 wrapper">
+                <a href="#">Privacy</a>
+            </div>
+            <div class="col-xl-4 col-lg-6 wrapper">
+                <a href="app_download.html">Android Mobile Apps</a>
+            </div>
+            <div class="col-xl-4 col-lg-6 wrapper">
+                <a href="app_download.html">iOS Mobile Apps</a>
+            </div>
+            <div class="col-12 wrapper">
+                <a href="#">Zillow Canada</a>
+            </div>
+        </div>
+    </div> <!-- container -->
+</main> <!-- main section -->
+
+<div class="container"> <hr> </div>
+
+        <!-- codes for footer section -->
+<footer>
+    <div class="container d-flex justify-content-between">
+        <a href="#">Zillow Help Center</a>
+        <span>English (US)</span>
+    </div>
+</footer>
+</body>
+</html>
+
+<!-- search filter -->
+<script>
+    function searchForHelp() {
+        // Declare variables
+        let input, filter, wrapper, keyword, span, i, txtValue;
+        input = document.getElementById('searchBtn');
+        filter = input.value.toUpperCase();
+        wrapper = document.getElementsByClassName("help_links");
+        keyword = document.getElementsByClassName('wrapper');
+
+        // Loop through all list items, and hide those who don't match the search query
+        for (i = 0; i < keyword.length; i++) {
+            link = keyword[i].getElementsByTagName("a")[0];
+            txtValue = link.textContent || link.innerText;
+            if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                keyword[i].style.display = "";
+            } else {
+                keyword[i].style.display = "none";
+            }
+        }
+    };
+</script>

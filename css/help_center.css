@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+* {padding: 0; margin: 0; box-sizing: border-box;}
+body {font-family: "open sans"; color: #333;}
+a {text-decoration: none; color: #136EFA;}
+
+        /* codes for header section */
+header {background: #f5f5f5; padding: 15px 0;}
+header .container {display: flex; justify-content: space-between;}
+header .logo {width: 180px; align-self: center;}
+header .links {align-self: center;}
+header .links a {margin-left: 15px;}
+
+        /* codes for banner section */
+#banner {padding: 120px 0; background: url(../image/banner/help_center.jpg); background-repeat: no-repeat; background-size: cover; background-position: center;}
+#banner .search_wrapper {display: flex; background: #fff; max-width: 600px; margin: auto; padding: 10px 20px; color: #136EFA; border-radius: 30px;}
+#banner .search_wrapper input {background: none; border: none; outline: none; width: 100%; margin-left: 15px; color: #136EFA;}
+
+        /* codes for main section */
+main {padding: 50px 0;}
+main .wrapper {padding: 10px;}
+main .wrapper a {border: 1px solid #136EFA; display: block; padding: 20px 10px; text-align: center; border-radius: 6px; transition: all 0.3s;}
+main .wrapper a:hover {background: #136EFA; color: #fff;}
+
+        /* codes for footer section */
+footer {padding: 25px 0; border-top: 1px solid #ddd; margin-top: 100px; font-weight: bold;}
+
+/* responsive for mobile */
+@media screen and (max-width: 500px) {
+    header .links a:first-child {display: none;}
+}

@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+* {padding: 0; margin: 0; box-sizing: border-box;}
+body {font-family: "open sans"; color: #333;}
+a {text-decoration: none; color: #333;}     a:hover {color: #136EFA;}
+ul {list-style-type: none; padding: 0; margin: 0;}
+button {background: none; border: none;}
+section {padding: 80px 0;}
+h1, h2, h3, h4, h5, h6 {font-weight: bold;}
+
+        /* codes for header section */
+header {background: #f3f3f9; z-index: 10; border-bottom: 1px solid #ddd;}
+header #mobile_menu_wrapper {display: none;}
+header .logo {padding: 15px 0;}
+header .menu_wrapper {display: flex; justify-content: space-between;}
+header .menu_wrapper ul.main_menu li.menu_btn {display: inline-block; padding: 20px 10px; cursor: pointer;}
+/* left submenu */
+header .menu_wrapper ul.main_menu li.menu_btn:hover .sub_menu {display: block;}
+header .menu_wrapper ul.main_menu li.menu_btn .sub_menu {position: absolute; background: #fff; width: 100%; left: 0; top: 64px; padding: 20px 0; cursor: auto; display: none; border: 1px solid #ddd; z-index: 10;}
+header .menu_wrapper ul.main_menu li.menu_btn .sub_menu .left {border-right: 1px solid #ccc; padding: 15px 40px 15px 10px;}
+header .menu_wrapper ul.main_menu li.menu_btn .sub_menu .middle {border-right: 1px solid #ccc; padding: 15px 40px;}
+header .menu_wrapper ul.main_menu li.menu_btn .sub_menu .right {padding: 15px 40px;}
+header .menu_wrapper ul.main_menu li.menu_btn .sub_menu ul li a {margin-top: 10px; display: block; color: #136EFA;}
+header .menu_wrapper ul.main_menu li.menu_btn .sub_menu ul li a:hover {text-decoration: underline;}
+/* right submenu */
+header .menu_wrapper ul.main_menu li.menu_btn:hover .manage_rentals_submenu {display: block;}
+header .menu_wrapper ul.main_menu li.menu_btn .manage_rentals_submenu {position: absolute; background: #fff; width: 280px; right: 0; top: 64px; padding: 30px; cursor: auto; display: none; border: 1px solid #ddd; z-index: 10;}
+header .menu_wrapper ul.main_menu li.menu_btn .manage_rentals_submenu ul li a {color: #136EFA; margin-top: 10px; display: block;} 
+header .menu_wrapper ul.main_menu li.menu_btn .manage_rentals_submenu ul li a:hover {text-decoration: underline;}
+
+        /* codes for banner section */
+#banner {color: #fff; text-align: center; padding: 200px 0; background: linear-gradient(#00000090, #00000090), url(/image/banner/heloc.jpg); background-repeat: no-repeat; background-size: cover; background-position: center;}
+#banner form {text-align: left; margin: auto; max-width: 500px;}
+#banner form .input {display: flex; margin-top: 10px; white-space: nowrap;}
+#banner form .input input {width: 100%; padding: 10px; border-radius: 5px; border: none; margin: 5px 0;}
+#banner form .input input:hover, #banner form .input input:focus {outline: 1px solid #136EFA;}
+#banner form .input a {margin: 5px 0; padding: 10px 15px;}
+
+        /* codes for main section */
+main {padding: 50px 0;}
+main  a {color: #002a69; text-decoration: underline;}
+main .card {padding: 20px; box-shadow: 0 0 10px #ccc;}
+main .card p {font-size: 15px; text-align: justify;}
+/* calculator */
+main .calculator {box-shadow: 0 0 10px #bbb; padding: 20px; border-radius: 5px; border-top: 3px solid #136EFA;}
+main .calculator form label {font-size: 13px; font-weight: bold;}
+main .calculator form input {border: 1px solid #ddd; background: #f3f3f9; width: 100%; padding: 5px 10px; margin-bottom: 20px; border-radius: 4px;}
+main .calculator form input:hover, main .calculator form input:focus {outline: 1px solid #136EFA;}
+/* find heloc */
+main .find_heloc {margin: 10px 0 30px; text-align: center;}
+main .find_heloc i {color: #136EFA; font-size: 40px; margin-bottom: 10px; display: block;}
+/* accordion */
+main ul.accordion li {border: 1px solid #ddd; margin-bottom: 10px;}
+main ul.accordion li button {font-size: 20px; font-weight: bold; padding: 10px; width: 100%; text-align: left;}
+main ul.accordion li button i {color: #136EFA; display: inline-block;}
+main ul.accordion li button i.active {transform: rotate(180deg);}
+main ul.accordion li button:hover, main ul.accordion li button.active {background: #f3f3f9;}
+main ul.accordion li .desc {padding: 10px; border-top: 1px solid #ddd; display: none;}
+main ul.accordion li .desc.active {display: block;}
+/* credit */
+main ul.requirement {list-style-type: disc; margin: 0 0 30px 30px;}
+main ul.credit {list-style-type: decimal; margin-left: 30px;}
+main .lender_wrapper {background: #f2faff; padding: 40px 20px 120px;}
+
+        /* codes for footer section */
+footer ul.links {text-align: center;}
+footer ul.links li {display: inline-block; padding: 5px 10px;}
+footer ul.links li a:hover {text-decoration: underline;}
+footer .about p {font-size: 12px; color: #999;}
+footer .about p a {color: #136EFA; text-decoration: underline;}
+footer .bottom {display: flex; flex-wrap: wrap; margin: 20px 0; justify-content: center; color: #999;}
+footer .logo {padding: 10px; align-self: center;}
+footer .social {padding: 10px; align-self: center;}
+footer .social a {color: #136EFA; font-size: 20px; margin-left: 5px;}
+footer .copyright {padding: 10px; align-self: center;}
+footer .copyright a {color: #136EFA; font-size: 20px; margin-left: 5px;}
+
+/* responsive coding start from here */
+@media screen and (max-width: 1000px){
+
+header .menu_wrapper {display: none;}
+/* mobile menus */
+header #mobile_menu_wrapper {display: flex; justify-content: space-between;}
+header #mobile_menu_wrapper .sign_in_link {color: #136EFA; font-weight: bold; align-self: center;}
+header #mobile_menu_wrapper .menu_button {font-size: 20px; color: #136EFA; align-self: center;}
+/* nav */
+header #mobile_menu_wrapper nav#mobile_nav.active {display: block;}
+header #mobile_menu_wrapper nav#mobile_nav {position: fixed; background: #fff; width: 100%; height: 100%; top: 0; left: 0; z-index: 11; padding: 20px; overflow-y: scroll; display: none;}
+header #mobile_menu_wrapper nav#mobile_nav .menu_btn {cursor: pointer; color: #136EFA; font-weight: bold; font-size: 18px;}
+header #mobile_menu_wrapper nav#mobile_nav .menu_btn:hover .sub_menu {display: block;}
+header #mobile_menu_wrapper nav#mobile_nav .menu_btn .sub_menu {padding: 10px; display: none;}
+header #mobile_menu_wrapper nav#mobile_nav .menu_btn .sub_menu h6 {color: #999; font-size: 18px;}
+header #mobile_menu_wrapper nav#mobile_nav .menu_btn .sub_menu ul {margin: 10px; font-size: 16px; font-weight: normal;}
+
+}

@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+* {padding: 0; margin: 0; box-sizing: border-box;}
+body {font-family: "open sans"; color: #333;}
+a {text-decoration: none; color: #333;}     a:hover {color: #136EFA;}
+ul {list-style-type: none; padding: 0; margin: 0;}
+button {background: none; border: none;}
+
+
+        /* codes for header section */
+header {background: #f3f3f9; z-index: 10; border-bottom: 1px solid #ddd;}
+header #mobile_menu_wrapper {display: none;}
+header .logo {padding: 15px 0;}
+header .menu_wrapper {display: flex; justify-content: space-between;}
+header .menu_wrapper ul.main_menu li.menu_btn {display: inline-block; padding: 20px 10px; cursor: pointer;}
+/* left submenu */
+header .menu_wrapper ul.main_menu li.menu_btn:hover .sub_menu {display: block;}
+header .menu_wrapper ul.main_menu li.menu_btn .sub_menu {position: absolute; background: #fff; width: 100%; left: 0; top: 64px; padding: 20px 0; cursor: auto; display: none; border: 1px solid #ddd; z-index: 10;}
+header .menu_wrapper ul.main_menu li.menu_btn .sub_menu .left {border-right: 1px solid #ccc; padding: 15px 40px 15px 10px;}
+header .menu_wrapper ul.main_menu li.menu_btn .sub_menu .middle {border-right: 1px solid #ccc; padding: 15px 40px;}
+header .menu_wrapper ul.main_menu li.menu_btn .sub_menu .right {padding: 15px 40px;}
+header .menu_wrapper ul.main_menu li.menu_btn .sub_menu ul li a {margin-top: 10px; display: block; color: #136EFA;}
+header .menu_wrapper ul.main_menu li.menu_btn .sub_menu ul li a:hover {text-decoration: underline;}
+/* right submenu */
+header .menu_wrapper ul.main_menu li.menu_btn:hover .manage_rentals_submenu {display: block;}
+header .menu_wrapper ul.main_menu li.menu_btn .manage_rentals_submenu {position: absolute; background: #fff; width: 280px; right: 0; top: 64px; padding: 30px; cursor: auto; display: none; border: 1px solid #ddd; z-index: 10;}
+header .menu_wrapper ul.main_menu li.menu_btn .manage_rentals_submenu ul li a {color: #136EFA; margin-top: 10px; display: block;} 
+header .menu_wrapper ul.main_menu li.menu_btn .manage_rentals_submenu ul li a:hover {text-decoration: underline;}
+
+        /* codes for banner section */
+#banner {background: #006aff; color: #fff; padding: 50px 0;}
+#banner .wrapper {max-width: 1000px; margin: auto; display: flex; justify-content: space-between; flex-wrap: wrap;}
+#banner .wrapper .left {width: 50%; padding: 15px; align-self: center;}
+#banner .wrapper .left .phone {display: flex; justify-content: space-between;}
+#banner .wrapper .left .phone input {border: none; outline: none; padding: 10px; border-radius: 5px; width: 100%; margin-bottom: 10px;}
+#banner .wrapper .left .phone button {background: #fff; color: #136EFA; font-weight: bold; padding: 10px 20px; border-radius: 5px; transition: all 0.3s; white-space: nowrap; margin-left: 10px; margin-bottom: 10px;}
+#banner .wrapper .left .phone button:hover {background: #0d4599; color: #fff;}
+#banner .wrapper .right {width: 50%; padding: 15px; align-self: center; text-align: center;}
+#banner .wrapper .right img {width: 100%; cursor: pointer;}
+/* video */
+#banner .wrapper .right .video_wrapper {position: fixed; width: 100%; height: 100%; left: 0; top: 0; background: #000000cc; z-index: 15; display: none;}
+#banner .wrapper .right .video_wrapper .wrapper {width: 400px; height: 250px; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); background: #fff; border-radius: 5px;}
+#banner .wrapper .right .video_wrapper .wrapper video {width: 100%; height: 100%; border-radius: 5px;}
+#banner .wrapper .right .video_wrapper .wrapper button {color: #fff; font-size: 20px; width: 50px; height: 50px; border-radius: 50%; box-shadow: 0 0 10px #ffffff90; margin-left: auto; margin-top: -60px;}
+
+        /* codes for feature section  */
+#feature {padding: 50px 0;}
+#feature .wrapper {max-width: 900px; margin: auto; display: flex; flex-wrap: wrap; justify-content: space-between;}
+#feature .wrapper .item {width: 48%; text-align: center; padding: 10px;}
+
+        /* codes for rating section */
+#rating {text-align: center; padding: 50px 0; background: #E0F2FF;}
+#rating img {width: 80%;}
+
+        /* codes for box section  */
+#boxes {text-align: center; padding: 50px 0;}
+
+        /* codes for download section  */
+#download {background: #006aff; padding: 80px 10px; color: #fff;}
+#download .wrapper {max-width: 700px; margin: auto; text-align: center;}
+#download .wrapper .phone {display: flex; justify-content: space-between; margin-top: 30px;}
+#download .wrapper .phone input {border: none; outline: none; padding: 10px; border-radius: 5px; width: 100%; margin-bottom: 10px;}
+#download .wrapper .phone button {background: #fff; color: #136EFA; font-weight: bold; padding: 10px 20px; border-radius: 5px; transition: all 0.3s; white-space: nowrap; margin-left: 10px; margin-bottom: 10px;}
+#download .wrapper .phone button:hover {background: #0d4599; color: #fff;}
+
+        /* codes for bottom section */
+#bottom {max-width: 700px; margin: auto; padding: 50px 10px; font-size: 12px; text-align: center; color: #999;}
+
+        /* codes for footer section */
+footer ul.links {text-align: center;}
+footer ul.links li {display: inline-block; padding: 5px 10px;}
+footer ul.links li a:hover {text-decoration: underline;}
+footer .about p {font-size: 12px; color: #999;}
+footer .about p a {color: #136EFA; text-decoration: underline;}
+footer .bottom {display: flex; flex-wrap: wrap; margin: 20px 0; justify-content: center; color: #999;}
+footer .logo {padding: 10px; align-self: center;}
+footer .social {padding: 10px; align-self: center;}
+footer .social a {color: #136EFA; font-size: 20px; margin-left: 5px;}
+footer .copyright {padding: 10px; align-self: center;}
+footer .copyright a {color: #136EFA; font-size: 20px; margin-left: 5px;}
+
+/* responsive coding start from here */
+@media screen and (max-width: 1000px){
+
+header .menu_wrapper {display: none;}
+/* mobile menus */
+header #mobile_menu_wrapper {display: flex; justify-content: space-between;}
+header #mobile_menu_wrapper .sign_in_link {color: #136EFA; font-weight: bold; align-self: center;}
+header #mobile_menu_wrapper .menu_button {font-size: 20px; color: #136EFA; align-self: center;}
+/* nav */
+header #mobile_menu_wrapper nav#mobile_nav.active {display: block;}
+header #mobile_menu_wrapper nav#mobile_nav {position: fixed; background: #fff; width: 100%; height: 100%; top: 0; left: 0; z-index: 11; padding: 20px; overflow-y: scroll; display: none;}
+header #mobile_menu_wrapper nav#mobile_nav .menu_btn {cursor: pointer; color: #136EFA; font-weight: bold; font-size: 18px;}
+header #mobile_menu_wrapper nav#mobile_nav .menu_btn:hover .sub_menu {display: block;}
+header #mobile_menu_wrapper nav#mobile_nav .menu_btn .sub_menu {padding: 10px; display: none;}
+header #mobile_menu_wrapper nav#mobile_nav .menu_btn .sub_menu h6 {color: #999; font-size: 18px;}
+header #mobile_menu_wrapper nav#mobile_nav .menu_btn .sub_menu ul {margin: 10px; font-size: 16px; font-weight: normal;}
+#boxes .box {display: flex; justify-content: space-between;}
+#boxes .box img {width: 200px; align-self: center;}
+
+}
+
+@media screen and (max-width: 768px) {
+    
+#banner .wrapper .left {width: 100%;}
+#banner .wrapper .right {width: 100%;}
+#banner .wrapper .right img {max-width: 300px; margin: auto;}
+
+}
+
+@media screen and (max-width: 500px) {
+    
+#banner .wrapper .left .phone {flex-wrap: wrap; justify-content: center;}
+#banner .wrapper .right .video_wrapper .wrapper {width: 95%;}
+#feature .wrapper .item {width: 100%;}
+#boxes .box {display: block;}
+#download .wrapper .phone {flex-wrap: wrap; justify-content: center;}
+
+}
