@@ -74,7 +74,7 @@ header .menu_wrapper ul.main_menu li.menu_btn .manage_rentals_submenu ul li a:ho
 #slider .wrapper .item .dots i.active {color: #136EFA;}
 
         /* codes for bottom banner section */
-#bottom_banner {text-align: center; color: #fff; background: url(/image/renter_list/banner.jpg); background-repeat: no-repeat; background-size: cover; background-position: center;}
+#bottom_banner {text-align: center; color: #fff; background: url(../image/renter_list/banner.jpg); background-repeat: no-repeat; background-size: cover; background-position: center;}
 #bottom_banner p {font-weight: bold; max-width: 600px; margin: 0 auto 30px; font-size: 18px;}
 
         /* codes for footer section */

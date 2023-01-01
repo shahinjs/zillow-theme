@@ -29,7 +29,7 @@ header .menu_wrapper ul.main_menu li.menu_btn .manage_rentals_submenu ul li a {c
 header .menu_wrapper ul.main_menu li.menu_btn .manage_rentals_submenu ul li a:hover {text-decoration: underline;}
 
         /* codes for banner section */
-#banner {background: url(/image/banner/man-working-laptop.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;}
+#banner {background: url(../image/banner/man-working-laptop.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;}
 #banner .container {color: #fff; max-width: 750px; text-align: center;}
 
         /* codes for main section */

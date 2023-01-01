@@ -29,7 +29,7 @@ header .menu_wrapper ul.main_menu li.menu_btn .manage_rentals_submenu ul li a {c
 header .menu_wrapper ul.main_menu li.menu_btn .manage_rentals_submenu ul li a:hover {text-decoration: underline;}
 
         /* codes for banner section */
-#banner {color: #fff; text-align: center; padding: 200px 0; background: linear-gradient(#00000090, #00000090), url(/image/banner/heloc.jpg); background-repeat: no-repeat; background-size: cover; background-position: center;}
+#banner {color: #fff; text-align: center; padding: 200px 0; background: linear-gradient(#00000090, #00000090), url(../image/banner/heloc.jpg); background-repeat: no-repeat; background-size: cover; background-position: center;}
 #banner form {text-align: left; margin: auto; max-width: 500px;}
 #banner form .input {display: flex; margin-top: 10px; white-space: nowrap;}
 #banner form .input input {width: 100%; padding: 10px; border-radius: 5px; border: none; margin: 5px 0;}
